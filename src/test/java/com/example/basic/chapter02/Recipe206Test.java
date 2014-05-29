@@ -20,7 +20,7 @@ public class Recipe206Test {
                 getClass().getResource("").getFile(),
                 "test.txt");
 
-        // InputStreamReaderを使用し、明示的にエンコーディングを指定する
+        // FileInputStream, FileOutputStreamを使用し、明示的にエンコーディングを指定する
         try (BufferedReader reader = new BufferedReader(
                 new InputStreamReader(new FileInputStream(path.toFile()), UTF_8))) {
 

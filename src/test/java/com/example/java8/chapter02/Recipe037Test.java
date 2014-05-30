@@ -1,4 +1,4 @@
-package com.example.basic.chapter02;
+package com.example.java8.chapter02;
 
 import org.junit.Test;
 
@@ -10,6 +10,14 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class Recipe037Test {
+
+    // ラムダ式の詳細については以下のページを参照してください
+    //
+    // 徹底解説！Project Lambdaのすべて リターンズ
+    // http://www.java-users.jp/?p=917
+    //
+    // Javaラムダ式
+    // http://www.ne.jp/asahi/hishidama/home/tech/java/lambda.html
 
     @Test
     public void コレクションをソートする_匿名クラス版() throws Exception {
@@ -65,7 +73,7 @@ public class Recipe037Test {
         outer("hoge");
     }
 
-    private void outer(String outer) {
+    public void outer(String outer) {
 
         // ラムダ式であっても、匿名クラスであっても、実質的にfinal（変数に再代入を行っていない）な変数を参照可能。
 

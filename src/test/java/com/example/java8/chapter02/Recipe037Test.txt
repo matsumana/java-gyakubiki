@@ -1,0 +1,177 @@
+Compiled from "Recipe037Test.java"
+public class com.example.java8.chapter02.Recipe037Test {
+  public com.example.java8.chapter02.Recipe037Test();
+    Code:
+       0: aload_0       
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return        
+
+  public void コレクションをソートする_匿名クラス版() throws java.lang.Exception;
+    Code:
+       0: iconst_3      
+       1: anewarray     #2                  // class java/lang/String
+       4: dup           
+       5: iconst_0      
+       6: ldc           #3                  // String Groovy
+       8: aastore       
+       9: dup           
+      10: iconst_1      
+      11: ldc           #4                  // String Java
+      13: aastore       
+      14: dup           
+      15: iconst_2      
+      16: ldc           #5                  // String Scala
+      18: aastore       
+      19: invokestatic  #6                  // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+      22: astore_1      
+      23: aload_1       
+      24: new           #7                  // class com/example/java8/chapter02/Recipe037Test$1
+      27: dup           
+      28: aload_0       
+      29: invokespecial #8                  // Method com/example/java8/chapter02/Recipe037Test$1."<init>":(Lcom/example/java8/chapter02/Recipe037Test;)V
+      32: invokeinterface #9,  2            // InterfaceMethod java/util/List.sort:(Ljava/util/Comparator;)V
+      37: aload_1       
+      38: iconst_0      
+      39: invokeinterface #10,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      44: ldc           #4                  // String Java
+      46: invokestatic  #11                 // Method org/hamcrest/CoreMatchers.is:(Ljava/lang/Object;)Lorg/hamcrest/Matcher;
+      49: invokestatic  #12                 // Method org/hamcrest/MatcherAssert.assertThat:(Ljava/lang/Object;Lorg/hamcrest/Matcher;)V
+      52: aload_1       
+      53: iconst_1      
+      54: invokeinterface #10,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      59: ldc           #5                  // String Scala
+      61: invokestatic  #11                 // Method org/hamcrest/CoreMatchers.is:(Ljava/lang/Object;)Lorg/hamcrest/Matcher;
+      64: invokestatic  #12                 // Method org/hamcrest/MatcherAssert.assertThat:(Ljava/lang/Object;Lorg/hamcrest/Matcher;)V
+      67: aload_1       
+      68: iconst_2      
+      69: invokeinterface #10,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      74: ldc           #3                  // String Groovy
+      76: invokestatic  #11                 // Method org/hamcrest/CoreMatchers.is:(Ljava/lang/Object;)Lorg/hamcrest/Matcher;
+      79: invokestatic  #12                 // Method org/hamcrest/MatcherAssert.assertThat:(Ljava/lang/Object;Lorg/hamcrest/Matcher;)V
+      82: return        
+
+  public void コレクションをソートする_ラムダ式版() throws java.lang.Exception;
+    Code:
+       0: iconst_3      
+       1: anewarray     #2                  // class java/lang/String
+       4: dup           
+       5: iconst_0      
+       6: ldc           #3                  // String Groovy
+       8: aastore       
+       9: dup           
+      10: iconst_1      
+      11: ldc           #4                  // String Java
+      13: aastore       
+      14: dup           
+      15: iconst_2      
+      16: ldc           #5                  // String Scala
+      18: aastore       
+      19: invokestatic  #6                  // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+      22: astore_1      
+      23: aload_1       
+      24: invokedynamic #13,  0             // InvokeDynamic #0:compare:()Ljava/util/Comparator;
+      29: invokeinterface #9,  2            // InterfaceMethod java/util/List.sort:(Ljava/util/Comparator;)V
+      34: aload_1       
+      35: iconst_0      
+      36: invokeinterface #10,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      41: ldc           #4                  // String Java
+      43: invokestatic  #11                 // Method org/hamcrest/CoreMatchers.is:(Ljava/lang/Object;)Lorg/hamcrest/Matcher;
+      46: invokestatic  #12                 // Method org/hamcrest/MatcherAssert.assertThat:(Ljava/lang/Object;Lorg/hamcrest/Matcher;)V
+      49: aload_1       
+      50: iconst_1      
+      51: invokeinterface #10,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      56: ldc           #5                  // String Scala
+      58: invokestatic  #11                 // Method org/hamcrest/CoreMatchers.is:(Ljava/lang/Object;)Lorg/hamcrest/Matcher;
+      61: invokestatic  #12                 // Method org/hamcrest/MatcherAssert.assertThat:(Ljava/lang/Object;Lorg/hamcrest/Matcher;)V
+      64: aload_1       
+      65: iconst_2      
+      66: invokeinterface #10,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      71: ldc           #3                  // String Groovy
+      73: invokestatic  #11                 // Method org/hamcrest/CoreMatchers.is:(Ljava/lang/Object;)Lorg/hamcrest/Matcher;
+      76: invokestatic  #12                 // Method org/hamcrest/MatcherAssert.assertThat:(Ljava/lang/Object;Lorg/hamcrest/Matcher;)V
+      79: return        
+
+  public void コレクションをソートする_ラムダ式版_引数省略パターン１() throws java.lang.Exception;
+    Code:
+       0: iconst_3      
+       1: anewarray     #2                  // class java/lang/String
+       4: dup           
+       5: iconst_0      
+       6: ldc           #3                  // String Groovy
+       8: aastore       
+       9: dup           
+      10: iconst_1      
+      11: ldc           #4                  // String Java
+      13: aastore       
+      14: dup           
+      15: iconst_2      
+      16: ldc           #5                  // String Scala
+      18: aastore       
+      19: invokestatic  #6                  // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+      22: astore_1      
+      23: aload_1       
+      24: invokedynamic #14,  0             // InvokeDynamic #1:compare:()Ljava/util/Comparator;
+      29: invokeinterface #9,  2            // InterfaceMethod java/util/List.sort:(Ljava/util/Comparator;)V
+      34: aload_1       
+      35: iconst_0      
+      36: invokeinterface #10,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      41: ldc           #4                  // String Java
+      43: invokestatic  #11                 // Method org/hamcrest/CoreMatchers.is:(Ljava/lang/Object;)Lorg/hamcrest/Matcher;
+      46: invokestatic  #12                 // Method org/hamcrest/MatcherAssert.assertThat:(Ljava/lang/Object;Lorg/hamcrest/Matcher;)V
+      49: aload_1       
+      50: iconst_1      
+      51: invokeinterface #10,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      56: ldc           #5                  // String Scala
+      58: invokestatic  #11                 // Method org/hamcrest/CoreMatchers.is:(Ljava/lang/Object;)Lorg/hamcrest/Matcher;
+      61: invokestatic  #12                 // Method org/hamcrest/MatcherAssert.assertThat:(Ljava/lang/Object;Lorg/hamcrest/Matcher;)V
+      64: aload_1       
+      65: iconst_2      
+      66: invokeinterface #10,  2           // InterfaceMethod java/util/List.get:(I)Ljava/lang/Object;
+      71: ldc           #3                  // String Groovy
+      73: invokestatic  #11                 // Method org/hamcrest/CoreMatchers.is:(Ljava/lang/Object;)Lorg/hamcrest/Matcher;
+      76: invokestatic  #12                 // Method org/hamcrest/MatcherAssert.assertThat:(Ljava/lang/Object;Lorg/hamcrest/Matcher;)V
+      79: return        
+
+  public void コレクションをソートする_ラムダ式版_引数省略パターン２() throws java.lang.Exception;
+    Code:
+       0: iconst_3      
+       1: anewarray     #2                  // class java/lang/String
+       4: dup           
+       5: iconst_0      
+       6: ldc           #3                  // String Groovy
+       8: aastore       
+       9: dup           
+      10: iconst_1      
+      11: ldc           #4                  // String Java
+      13: aastore       
+      14: dup           
+      15: iconst_2      
+      16: ldc           #5                  // String Scala
+      18: aastore       
+      19: invokestatic  #6                  // Method java/util/Arrays.asList:([Ljava/lang/Object;)Ljava/util/List;
+      22: astore_1      
+      23: aload_1       
+      24: invokedynamic #15,  0             // InvokeDynamic #2:accept:()Ljava/util/function/Consumer;
+      29: invokeinterface #16,  2           // InterfaceMethod java/util/List.forEach:(Ljava/util/function/Consumer;)V
+      34: return        
+
+  public void 実質的final() throws java.lang.Exception;
+    Code:
+       0: aload_0       
+       1: ldc           #17                 // String hoge
+       3: invokevirtual #18                 // Method outer:(Ljava/lang/String;)V
+       6: return        
+
+  public void outer(java.lang.String);
+    Code:
+       0: aload_1       
+       1: invokedynamic #19,  0             // InvokeDynamic #3:run:(Ljava/lang/String;)Ljava/lang/Runnable;
+       6: astore_2      
+       7: new           #20                 // class com/example/java8/chapter02/Recipe037Test$2
+      10: dup           
+      11: aload_0       
+      12: aload_1       
+      13: invokespecial #21                 // Method com/example/java8/chapter02/Recipe037Test$2."<init>":(Lcom/example/java8/chapter02/Recipe037Test;Ljava/lang/String;)V
+      16: astore_3      
+      17: return        
+}

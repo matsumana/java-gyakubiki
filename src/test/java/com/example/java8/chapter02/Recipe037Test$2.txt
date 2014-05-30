@@ -1,0 +1,26 @@
+Compiled from "Recipe037Test.java"
+class com.example.java8.chapter02.Recipe037Test$2 implements java.lang.Runnable {
+  final java.lang.String val$outer;
+
+  final com.example.java8.chapter02.Recipe037Test this$0;
+
+  com.example.java8.chapter02.Recipe037Test$2(com.example.java8.chapter02.Recipe037Test, java.lang.String);
+    Code:
+       0: aload_0       
+       1: aload_1       
+       2: putfield      #1                  // Field this$0:Lcom/example/java8/chapter02/Recipe037Test;
+       5: aload_0       
+       6: aload_2       
+       7: putfield      #2                  // Field val$outer:Ljava/lang/String;
+      10: aload_0       
+      11: invokespecial #3                  // Method java/lang/Object."<init>":()V
+      14: return        
+
+  public void run();
+    Code:
+       0: getstatic     #4                  // Field java/lang/System.out:Ljava/io/PrintStream;
+       3: aload_0       
+       4: getfield      #2                  // Field val$outer:Ljava/lang/String;
+       7: invokevirtual #5                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+      10: return        
+}

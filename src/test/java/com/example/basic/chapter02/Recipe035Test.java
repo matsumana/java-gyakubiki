@@ -2,7 +2,13 @@ package com.example.basic.chapter02;
 
 import org.junit.Test;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.UnsupportedEncodingException;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 
@@ -69,7 +75,7 @@ public class Recipe035Test {
     }
 
     @Test
-    public void xxx() throws Exception {
+    public void catchブロックおよびfinallyブロックはtry_with_resource文の処理が完了後に実行される() throws Exception {
 
         // カレントディレクトリにあるファイルを読む
         Path in = FileSystems.getDefault().getPath(

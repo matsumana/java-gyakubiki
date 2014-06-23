@@ -66,8 +66,6 @@ public class Recipe055Test {
         Matcher matcher = pattern.matcher("[INFO]info massage\nHoge");
         boolean actual = matcher.find();
 
-        // TODO 改行を無視して先頭と末尾の両方をマッチさせる書き方がわからない
-
         assertThat(actual, is(true));
     }
 }
